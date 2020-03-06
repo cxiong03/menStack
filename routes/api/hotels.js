@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
     }
 });
 // GET ALL HOTEL
-router.get('/', async (req, res) => {
+router.get('/getallhotel', async (req, res) => {
     try {
         const hotels = await Hotel.find();
         res.json(hotels);
