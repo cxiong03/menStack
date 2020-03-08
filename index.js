@@ -13,7 +13,7 @@ mongoose
 
 app.use(express.static("public"));
 
-const hotelRouter = require('./routes/hotel');
+const hotelRouter = require('./routes/hotels');
 
 app.use('/api/hotel', hotelRouter);
 
