@@ -15,7 +15,32 @@ const hotelSchema = new mongoose.Schema({
     },
     roomType: {
         type: String,
-        require: true
+        require: true,
+    // room: {
+    //         type: mongoose.Schema.Types.ObjectId,
+    //         ref: 'Room'
+    //     }
+
+    rooms: [roomSchema]
+    }
+});
+
+const roomSchema = new mongoose.Schema({
+    roomNumber:{
+        type: Number,
+        min: 1
+    },
+    numberOfBeds:{
+        type: Number,
+        min: 1
+    },
+    smoking:{
+        type: Boolean,
+        default:false
+    },
+    pets:{
+        type: Boolean,
+        default:false
     }
 });
 
