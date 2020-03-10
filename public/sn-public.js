@@ -51,8 +51,8 @@ function createNeWHotel() { event.preventDefault();
     var hotel = {
       hotelName: document.getElementById("hotelName").value,
       hotelAddress: document.getElementById("hotelAddress").value,
-      city: document.getElementById("city").value,
-      state: document.getElementById("state").value
+      hotelCity: document.getElementById("hotelCity").value,
+      hotelState: document.getElementById("hotelState").value
 
     };
   

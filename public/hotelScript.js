@@ -1,13 +1,13 @@
-async function createHotel(hotelName, hotelAddress, city, state, room) {
+async function createHotel(hotelName, hotelAddress, hotelCity, hotelState, room) {
     const hotel = new Hotel({
         hotelName,
         hotelAddress,
-        city,
-        state,
+        hotelCity,
+        hotelState,
         room
     });
     const result = await hotel.save();
     console.log(result)
 }
 
-createHotel(hotelName, hotelAddress, city, state, room)
+createHotel(hotelName, hotelAddress, hotelCity, hotelState, room)
