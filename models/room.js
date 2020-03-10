@@ -16,6 +16,12 @@ const roomSchema = new mongoose.Schema({
     pets:{
         type: Boolean,
         default:false
+    },
+    checkInDate:{
+        type: Date
+    },
+    checkOutDate:{
+        type: Date
     }
 });
 
