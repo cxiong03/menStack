@@ -13,4 +13,7 @@ mongoose
 
 app.use(express.static("public"));
 
+const hotelRouter = require('./routes/api/hotels');
+app.use('api/hotels', hotelRouter);
+
 app.listen(3000, () => console.log("listening on port 3000"));
