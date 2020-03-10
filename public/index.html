@@ -9,6 +9,11 @@
 </head>
 <body>
   <header>
+  <div id="listOfHotel">
+
+  </div>
+
+  <!--
     <h1>Getaways<span>.com</span></h1>
   </header>
   <section class="hotelDisplay">
@@ -61,21 +66,26 @@ Lotte New York Palace</h4>
   </div>
   </div>
 </section>
+-->
   <section>
     <h1>Add a Hotel</h1>
     <form>
-      <label id="nameLabel" for="name">* Name: </label>
-      <input id="addHotel" type="text" placeholder="Hotel Name">
-      <label id="nameLabel" for="name">* how many rooms: </label>
-      <input id="addHotel" type="text" placeholder="Enter the rooms">
-      <select id="card" name="userRole">
-        
-        <option disabled selected>traveling with a pet?</option>
-        <option value = "trueValue">true</option>
-        <option value = "falseValue">false</option>
- 
-                    </select>
-      <button id="newAccount" type="submit">Add</button>
+      <label id="hotelName">* Hotel Name: </label>
+      <input id="hotelName" type="text" placeholder="Hotel Name">
+
+      <label id="hotelAddress">Hotel Address</label>
+      <input id="hotelAddress" type="text" placeholder="Enter Address">
+
+      <label id="hotelCity">Hotel City</label>
+      <input id="hotelCity" type="text">City</input>
+
+      <label id="hotelCity">Hotel City</label>
+      <input id="hotelCity" type="text">City</input>
+      
+      <label id="hotelState">Hotel State</label>
+      <input id="hotelState" type="text">State</input>
+
+      <button id="submitHotel" onclick= type="submit">Add</button>
     </form>
   </section>
 </body>
