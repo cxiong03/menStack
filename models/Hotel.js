@@ -7,24 +7,23 @@ const hotelSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-    checkInDate: {
+    hotelAddress: {
+        type: String,
+    },
+    city: {
+        type: String
+    },
+    state: {
         type: String,
         require: true
     },
-    checkOutDate: {
-        type: String,
-        require: true
-    },
-    roomType: {
-        type: String,
-        require: true,
+
     // room: {
     //         type: mongoose.Schema.Types.ObjectId,
     //         ref: 'Room'
     //     }
 
     rooms: [roomSchema]
-    }
 });
 
 module.exports = mongoose.model('Hotel', hotelSchema)
