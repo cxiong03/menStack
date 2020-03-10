@@ -50,9 +50,9 @@ const sendHttpRequest = (method, url, data) => {
 function createNeWHotel() { event.preventDefault();
     var hotel = {
       hotelName: document.getElementById("hotelName").value,
-      checkInDate: document.getElementById("checkInDate").value,
-      checkOutDate: document.getElementById("checkOutDate").value,
-      roomType: document.getElementById("roomType").value
+      hotelAddress: document.getElementById("hotelAddress").value,
+      city: document.getElementById("city").value,
+      state: document.getElementById("state").value
 
     };
   
