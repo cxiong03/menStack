@@ -44,11 +44,10 @@ const sendHttpRequest = (method, url, data) => {
      xhr.send(null);
  }
 
-// CREATE New HOTEL
+// CREATE NEW HOTEL
 
 //CREATE
-function createNeWHotel() {
-    event.preventDefault();
+function createNeWHotel() { event.preventDefault();
     var hotel = {
       hotelName: document.getElementById("hotelName").value,
       checkInDate: document.getElementById("checkInDate").value,
